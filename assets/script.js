@@ -1,5 +1,6 @@
 
 function searchByCity(searchTerm){
+    var searchTerm = 'Houston';
     var url = `https://api.openweathermap.org/data/2.5/forecast?q=${searchTerm}&appid=c98190d346452cf140fbc945266f6340&units=imperial`
     fetch(url).then(response => {
         console.log(response)
