@@ -34,4 +34,4 @@ function handleFormSubmit(event){
 // searchByCity("Hstn")
 
 var form = document.getElementsByTagName('form')[0]
-form.addEventListener('submit', handleFormSubmit)
+form.addEventListener('submit', handleFormSubmit) 
