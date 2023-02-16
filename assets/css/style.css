@@ -1,8 +1,22 @@
 body{
-    background-color: white;
+     background-color: white;
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+h1.dash {
+    padding-top: 2em;
+    font-size: 200%;
+}
+
+.dash {
+    font-weight: bold;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 header{
@@ -45,33 +59,4 @@ section:after {
     text-align: center;
     background-color: #f1f1f1;
 }
-
-/* .cardTwo {
-    background: grey;
-    padding: 2em;
-    border-radius: 30px;
-    width:25%
-
-}
-
-.cardThree {
-    background: grey;
-    padding: 2em;
-    border-radius: 30px;
-    width:25%
-}
-
-.cardFour {
-    background: grey;
-    padding: 2em;
-    border-radius: 30px;
-    width:25%
-}
-
-.cardFive {
-    background: grey;
-    padding: 2em;
-    border-radius: 30px;
-    width:25%
-} */
 
