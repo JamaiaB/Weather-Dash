@@ -13,14 +13,21 @@
     <header>
       <h1 class="dash">Weather Dashboard</h1>
     </header>
-    <main>
-      <aside>
+    <!-- <main> -->
+      <!-- <aside> -->
         <form>
-          <label for="cname">City name:</label><br />
+          <!-- <label for="cname">City name:</label><br />
           <input type="text" id="cname" name="cname" /><br />
-          <button type="submit">Submit</button>
+          <button type="submit">Submit</button> -->
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter a city">
+            <button type="submit">Search</button>
+          </form>
+          
+          <div class="weather-cards"></div>
+          
         </form>
-      </aside>
+      <!-- </aside> -->
       <section>
         <!-- <h1>5-Day Forecast</h1> -->
         <!-- <div class="card" id="one">
@@ -56,7 +63,7 @@
       </section> -->
       <div class="weather-cards"></div>
 
-    </main>
+    <!-- </main> -->
 
     <script src="./assets/weather.js"></script>
   </body>

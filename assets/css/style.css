@@ -29,11 +29,11 @@ main{
     display: flex;
 }
 
-aside{
+/* aside{
     background-color: green;
     width: 30%;
 
-}
+} */
 
 section {
     width: 70%;
@@ -59,7 +59,9 @@ section:after {
     text-align: center;
     background-color: #f1f1f1;
 } */
-
+button {
+    
+}
 .weather-card {
     border: 1px solid black;
     padding: 10px;
