@@ -1,6 +1,7 @@
-const city = " ";
+const city = "New York";
 const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=c98190d346452cf140fbc945266f6340&units=imperial`;
 
+// api call to search for the weather
 fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
@@ -17,20 +18,8 @@ fetch(apiUrl)
   .catch(error => {
     console.error(error);
   });
-
-  function handleFormSubmit(event){
-    event.preventDefault()
-    console.log(event.target)
-    var input = document.getElementById('cname')
-    console.log(input.value)
-    if(!input.value){
-        alert("Please enter a city!")
-        return
-    }
-    searchByCity(input.value)    
-}
   
-  
+  // api call to display the weather
   fetch(apiUrl)
     .then(response => response.json())
     .then(data => {

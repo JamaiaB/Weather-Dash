@@ -35,10 +35,14 @@ function handleFormSubmit(event){
     }
     searchByCity(input.value)    
 }
-// var url = `https://api.openweathermap.org/data/2.5/forecast?q=${searchTerm}&appid=c98190d346452cf140fbc945266f6340&units=imperial`
+//  var url = `https://api.openweathermap.org/data/2.5/forecast?q=${searchTerm}&appid=c98190d346452cf140fbc945266f6340&units=imperial`
+//  var searchTerm = 'Houston';
+ 
+function displayWeather (searchTerm){
 fetch(url)
 var url = `https://api.openweathermap.org/data/2.5/forecast?q=${searchTerm}&appid=c98190d346452cf140fbc945266f6340&units=imperial`
 var searchTerm = 'Houston'
+
     .then(response => response.json())
     .then(data => {
       const forecastList = data.list;
@@ -63,6 +67,7 @@ var searchTerm = 'Houston'
     .catch(error => {
       console.error(error);
     });
+}
 // searchByCity("Hstn")
 
 var form = document.getElementsByTagName('form')[0]
